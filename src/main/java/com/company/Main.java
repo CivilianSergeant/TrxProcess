@@ -95,7 +95,8 @@ class MyTask extends TimerTask{
 
 
                 //conn.setAutoCommit(true);
-                //conn.close();
+                conn.close();
+                System.out.println("End Session");
                 //executor.shutdown();
 
 
