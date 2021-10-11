@@ -82,7 +82,7 @@ public class DailyProcessLoanSaving {
                 long finish = System.currentTimeMillis();
                 long timeElapsed = finish - start;
                 System.out.println("Elapsed Time: "+ timeElapsed +"ms");
-
+                conn.setAutoCommit(true);
             }
             System.out.println("End-of-Execution");
         }catch(Exception ex){
